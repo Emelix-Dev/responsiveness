@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.hero-section{
+    height:auto;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 80px;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.nav .explore{
+    background-color: rgb(133, 224, 133);
+    color: black;
+    border: 2px solid rgb(133, 224, 133);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+}
+.nav .explore:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+.hero-section .container{
+    max-width: 1200px;
+    width:80%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:60px;
+    margin-top: 100px;
+}
+.right-hero-image{
+    background-image:url(https://colorlibhub.com/unapp/wp-content/themes/unapp/assets/images/showcase/workspace-board.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    height: 400px;
+    box-shadow: 0px 20px 40px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+} 
+@media screen and (max-width: 800px) {
+    .hero-section .container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 429px) {
+    .hero-section .container{
+        grid-template-columns: 1fr;
+    }
+}
+.left-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+}
+.left-hero h5{
+    color:blue;
+    font-size: 15px;
+}
+.left-hero h1{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.left-hero p{
+    font-size: 20px;
+    color: #555;
+}
+.left-hero .left-hero-text{
+    font-size: 17px;
+    margin: 10px 0;
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+.hero-buttons a{
+    text-decoration: none;
+    /* border: 1px solid black; */
+    padding: 15px 25px;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 17px;
+}
+.hero-buttons .explore{
+    background-color: rgb(133, 224, 133);
+    color: black;
+    border: 2px solid rgb(133, 224, 133);
+}
+.hero-buttons .explore:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+.hero-buttons .see{
+    border: 2px solid black;
+    color: black;
+}
+.hero-buttons .see:hover{
+    background-color: black;
+    color: white;
+}
+.product-teams{
+    margin-top: 100px;
+    background-color: rgb(240, 240, 300);
+    padding: 60px;
+    margin-bottom: 100px;
+}
+.product-teams-text{
+    text-align: center;
+    opacity: 0.7;
+}
+.product-teams-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    opacity: 0.7;
+    /* position: relative; */
+}
+/* .product-teams-logos .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 1;
+} */
+.product-teams-logos:hover{
+    opacity: 1;
+}
+.product-tour{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.product-tour-head-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.product-tour-head-text-one{
+    color: blue;
+    margin-bottom: 10px;
+}
+.product-tour-head-text-two{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.product-tour-head-text-three{
+    font-size: 20px;
+    color: #555;
+}
+.product-tour-section-first{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+}
+.product-tour-section-second{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+}
+ .product-tour-section-text{
+    padding: 100px 50px;
+}
+.product-tour-section-text-one{
+    color: blue;
+    margin-bottom: 20px;
+}
+.product-tour-section-text-three{
+    font-size: 20px;
+    color: #555;
+    margin: 20px 0px;
+}
